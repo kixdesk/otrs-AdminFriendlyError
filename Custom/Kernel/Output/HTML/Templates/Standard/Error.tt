@@ -1,0 +1,76 @@
+# --
+# Copyright (C) 2016 Perl-Services.de, http://perl-services.de
+# --
+# This software comes with ABSOLUTELY NO WARRANTY. For details, see
+# the enclosed file COPYING for license information (AGPL). If you
+# did not receive this file, see http://www.gnu.org/licenses/agpl.txt.
+# --
+
+<div class="MainBox ARIARoleMain SpacingTopLarge ErrorScreen">
+
+    <div class="W50pc CenterBox SpacingBottomLarge">
+        <div class="WidgetSimple">
+            <div class="Header">
+                <h2>[% Translate("An error occurred.") | html %]</h2>
+            </div>
+            <div class="Content">
+                <p>[% Translate(Data.Message) | truncate(200) | html %]</p>
+                <p class="SpacingTop">
+                    [% Translate(Data.Comment) | html %].
+                </p>
+
+                [% IF Data.ShowOTRSBusinessHint %]
+                <div class="MessageBox Info">
+                    <p class="SpacingTop">
+                        [% Translate("This error might be caused by a bug. Please inform your admin (%s) about this problem.", Config("AdminFriendlyError::PublicAdminEmail") ) | html %]
+                        [% Translate("The information in 'Error Details' can help the admin to find the problem, so please send them to the admin") %]
+                    </p>
+                </div>
+                [% END %]
+
+                    <p class="SpacingTop">
+                        <a href="#" id="GoBack" class="CallForAction"><span>[% Translate("go back to the previous page") | html %]</span></a>
+[% WRAPPER JSOnDocumentComplete %]
+<script type="text/javascript">//<![CDATA[
+$('#GoBack').bind('click', function (Event) {
+    // check if an older history entry is available
+    if (history.length > 1) {
+        history.back();
+        return false;
+    }
+
+    // if we're in a popup window, close it
+    if (Core.UI.Popup.CurrentIsPopupWindow()) {
+        Core.UI.Popup.ClosePopup();
+        return false;
+    }
+
+    // normal window, no history: no action possible
+    return false;
+});
+//]]></script>
+[% END %]
+                    </p>
+                </form>
+
+                <div id="Traceback" class="SpacingTop Notice Hidden">
+                    <h4>[% Translate("Error Details") | html %]:</h4>
+
+                </div>
+            </div>
+        </div>
+[% RenderBlockStart("ShowBackendTraceback") %]
+        <div class="WidgetSimple Collapsed SpacingTop">
+            <div class="Header ErrorMessage">
+                <div class="WidgetAction Toggle">
+                    <a href="#" title="[% Translate("Expand") | html %]"><i class="fa fa-caret-right"></i><i class="fa fa-caret-down"></i></a>
+                </div>
+                <h2>[% Translate("Error Details") | html %]</h2>
+            </div>
+            <div class="Content">
+                <code><pre>Backend [% Data.BackendTraceback | html %]</pre></code>
+            </div>
+        </div>
+[% RenderBlockEnd("ShowBackendTraceback") %]
+    </div>
+</div>

@@ -1,0 +1,20 @@
+=head1 NAME
+
+AdminFriendlyError
+
+=head1 DESCRIPTION
+
+Replace error message where normal agents see Business Solution ad with a more admin friendly version
+
+
+* OTRS Business Solution is a trademark of OTRS Inc.
+
+=head1 REPOSITORY & BUGS
+
+The code for this addon and a bugtracker can be found at L<https://github.com/reneeb/otrs-AdminFriendlyError>.
+
+=head1 AUTHOR
+
+This module is licensed under the terms of AGPL 3.0.
+
+Author: Renee Baecker, Perl-Services.de, C<< <otrs@perl-services.de> >>
