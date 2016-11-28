@@ -20,7 +20,7 @@ sub Data {
     $Lang->{'This error might be caused by a bug. Please inform your admin (%s) about this problem.'} =
         'Dieser Fehler könnte durch einen Bug verursacht sein. Bitte informieren Sie Ihren Admin (%s) über dieses Problem.';
 
-    $Lang->{"The information in 'Error Details' can help the admin to find the problem, so please send them to the admin"} =
+    $Lang->{"The information in 'Error Details' can help in locating the problem, so please send them to your admin."} =
         "Die Informationen unter 'Fehlerdetails' können dem Administrator helfen das Problem zu finden. Bitte schicken Sie"
         . " die Informationen an den Administrator";
 }

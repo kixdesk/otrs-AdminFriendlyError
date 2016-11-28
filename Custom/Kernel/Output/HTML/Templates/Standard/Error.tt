@@ -23,7 +23,7 @@
                 <div class="MessageBox Info">
                     <p class="SpacingTop">
                         [% Translate("This error might be caused by a bug. Please inform your admin (%s) about this problem.", Config("AdminFriendlyError::PublicAdminEmail") ) | html %]
-                        [% Translate("The information in 'Error Details' can help the admin to find the problem, so please send them to the admin") %]
+                        [% Translate("The information in 'Error Details' can help in locating the problem, so please send them to your admin.") %]
                     </p>
                 </div>
                 [% END %]
