@@ -15,6 +15,7 @@
         <File Permission="644" Location="Kernel/Config/Files/AdminFriendlyError.xml" />
         <File Permission="644" Location="Kernel/Language/de_AdminFriendlyError.pm" />
         <File Permission="644" Location="Kernel/Language/hu_AdminFriendlyError.pm" />
+        <File Permission="644" Location="Kernel/Language/zh_CN_AdminFriendlyError.pm" />
         <File Permission="644" Location="doc/AdminFriendlyError.json" />
         <File Permission="644" Location="doc/en/AdminFriendlyError.pod" />
         <File Permission="644" Location="doc/hu/AdminFriendlyError.pod" />
