@@ -1,6 +1,6 @@
 {
     "name": "AdminFriendlyError",
-    "version": "5.0.2",
+    "version": "5.0.3",
     "framework": [
         "5.0.x"
     ],
@@ -10,7 +10,8 @@
     },
     "license": "GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007",
     "description" : {
-        "en": "Replace error message where normal agents see Business Solution ad with a more admin friendly version",
-        "de": "Ersetzt eine Fehlermeldung, bei der normale Agenten Business Solution Werbung sehen mit einer mehr Adminfreundlichen variante"
+        "en": "Replace error message where normal agents see Business Solution ad with a more admin friendly version.",
+        "de": "Ersetzt eine Fehlermeldung, bei der normale Agenten Business Solution Werbung sehen mit einer mehr Adminfreundlichen variante.",
+        "hu": "Hibaüzenet cseréje adminisztrátorbarát verzióra, ahol a normál ügyintézők a Business Solution reklámot látják."
     }
 }

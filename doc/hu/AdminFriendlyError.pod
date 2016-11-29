@@ -1,0 +1,28 @@
+=encoding utf-8
+
+=head1 NÉV
+
+AdminFriendlyError - adminisztrátorbarát hibaüzenet
+
+=head1 LEÍRÁS
+
+Hibaüzenet cseréje adminisztrátorbarát verzióra, ahol a normál ügyintézők a 
+Business Solution* reklámot látják.
+
+* Az OTRS Business Solution az OTRS Inc. bejegyzett védjegye.
+
+=head1 KÓDTÁROLÓ ÉS HIBAKÖVETŐ
+
+Ennek a kiegészítőnek a forráskódja és egy hibakövető megtalálható a 
+L<https://github.com/reneeb/otrs-AdminFriendlyError> címen.
+
+=head1 SZERZŐ
+
+Ez a modul az AGPL 3.0 feltételei szerint licencelt.
+
+Szerző: Renée Bäcker, Perl-Services.de, C<< <otrs@perl-services.de> >>
+
+=head1 MAGYAR FORDÍTÁS
+
+A magyar fordítást az OTRS-megoldások csapata készítette.
+Copyright (C) 2016 Úr Balázs, L<http://otrs-megoldasok.hu>
