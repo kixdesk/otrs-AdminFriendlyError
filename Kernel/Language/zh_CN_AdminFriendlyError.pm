@@ -17,10 +17,10 @@ sub Data {
 
     my $Lang = $Self->{Translation} || {};
 
-    $Lang->{'This error might be caused by a bug. Please inform your admin (%s) about this problem.'} =
+    $Lang->{'This error might be caused by a bug. Please inform the administrator (%s) about this problem.'} =
         '这个错误不确定是否为 Bug, 请与系统管理员 (%s) 联系确认.';
 
-    $Lang->{"The information in 'Error Details' can help in locating the problem, so please send them to your admin."} =
+    $Lang->{"The information in 'Error Details' can help in locating the problem, so please send them to the administrator."} =
         "在'详细信息'里的内容可以帮助定位问题, 请把这些内容发送给系统管理员.";
 }
 
